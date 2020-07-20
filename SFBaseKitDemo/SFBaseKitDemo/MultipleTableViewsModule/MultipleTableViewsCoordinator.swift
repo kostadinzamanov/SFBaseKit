@@ -1,14 +1,14 @@
 //
-//  HomeCoordinator.swift
+//  MultipleTableViewsCoordinator.swift
 //  SFBaseKitDemo
 //
-//  Created by Aleksandar Geyman on 21.04.20.
+//  Created by Kostadin Zamanov on 30.06.20.
 //  Copyright © 2020 Upnetix. All rights reserved.
 //
 
 import SFBaseKit
 
-class HomeCoordinator: Coordinator {
+class MultipleTableViewsCoordinator: Coordinator {
     
     unowned private let navigationController: UINavigationController
     
@@ -17,14 +17,14 @@ class HomeCoordinator: Coordinator {
     }
     
     override func start() {
-        guard let rootVC = HomeViewController.instantiateFromStoryboard() else { return }
+        guard let rootVC = MultipleTableViewsViewController.instantiateFromStoryboard() else { return }
         rootVC.sceneDelegate = self
         navigationController.pushViewController(rootVC, animated: true)
     }
 }
 
 // MARK: HomeScreenDelegate
-extension HomeCoordinator: HomeSceneDelegate {
+extension MultipleTableViewsCoordinator: MultipleTableViewsSceneDelegate {
     func homeSceneShouldContinueToLogOut() {
         finish()
         appCoordinator?.shouldShowLoginScene()

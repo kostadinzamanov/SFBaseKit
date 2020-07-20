@@ -136,8 +136,16 @@ public extension UITableView {
     /// Directly register cells and headerFooterViews with `BaseDataSource` confirming instance.
     /// - Parameter dataSource: `BaseDataSource` confirming instance, containing information for `headerFooterReuseIdentifiers` and `reuseIdentifiers`.
     func register(with dataSource: BaseDataSource) {
-        register(headerFooterNames: dataSource.headerFooterReuseIdentifiers)
-        register(cellNames: dataSource.reuseIdentifiers)
+        let registeredIdentifier = dataSource.containerIdentifiersMap[self.accessibilityIdentifier ?? DefaultIdentifier]
+        
+        let headerFooterReuseIdentifiers = dataSource.headerFooterReuseIdentifiers.filter { (object) -> Bool in
+            return object.containerIdentifier == registeredIdentifier
+        }
+        let cellNames = dataSource.reuseIdentifiers.filter { (object) -> Bool in
+            return object.containerIdentifier == registeredIdentifier
+        }
+        register(headerFooterNames: headerFooterReuseIdentifiers.first?.value ?? [])
+        register(cellNames: cellNames.first?.value ?? [])
     }
     
     /// Register an array of cell names <"\(YourCellClass.self)"> to be reused

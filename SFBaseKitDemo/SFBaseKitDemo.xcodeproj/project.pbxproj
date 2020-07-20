@@ -11,6 +11,13 @@
 		115B234F239A63DC001A2472 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115B234E239A63DC001A2472 /* Assets.xcassets */; };
 		115B2352239A63DC001A2472 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115B2350239A63DC001A2472 /* LaunchScreen.storyboard */; };
 		115B235D239A63DC001A2472 /* BaseKitDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115B235C239A63DC001A2472 /* BaseKitDemoTests.swift */; };
+		1E1C935224BDA1AE00E9B2F0 /* icons8-ios-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E1C935124BDA1AE00E9B2F0 /* icons8-ios-50.png */; };
+		1E9AA5C724AB1FFE00F8436C /* MultipleTableViews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E9AA5C624AB1FFE00F8436C /* MultipleTableViews.storyboard */; };
+		1E9AA5C924AB244F00F8436C /* MultipleTableViewsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9AA5C824AB244F00F8436C /* MultipleTableViewsCoordinator.swift */; };
+		1E9AA5CB24AB245E00F8436C /* MultipleTableViewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9AA5CA24AB245E00F8436C /* MultipleTableViewsViewController.swift */; };
+		1E9AA5CD24AB2F4D00F8436C /* ExampleContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E9AA5CC24AB2F4D00F8436C /* ExampleContentView.xib */; };
+		1E9AA5CF24AB2FDF00F8436C /* ExampleContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9AA5CE24AB2FDF00F8436C /* ExampleContentView.swift */; };
+		1EB5831824AB3E6A00F595CC /* MTVViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB5831724AB3E6A00F595CC /* MTVViewModel.swift */; };
 		46A6EFB0D1EF7C59DA08AB92 /* Pods_SFBaseKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B536F0236877E4BB8A98FDC /* Pods_SFBaseKitDemo.framework */; };
 		4A9B65942446E0D1006AC1F9 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9B65932446E0D1006AC1F9 /* AppCoordinator.swift */; };
 		4A9B65972446E20F006AC1F9 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9B65962446E20F006AC1F9 /* LoginCoordinator.swift */; };
@@ -45,6 +52,13 @@
 		115B2358239A63DC001A2472 /* SFBaseKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFBaseKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		115B235C239A63DC001A2472 /* BaseKitDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseKitDemoTests.swift; sourceTree = "<group>"; };
 		115B235E239A63DC001A2472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E1C935124BDA1AE00E9B2F0 /* icons8-ios-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-ios-50.png"; path = "SFBaseKitDemo/icons8-ios-50.png"; sourceTree = SOURCE_ROOT; };
+		1E9AA5C624AB1FFE00F8436C /* MultipleTableViews.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MultipleTableViews.storyboard; sourceTree = "<group>"; };
+		1E9AA5C824AB244F00F8436C /* MultipleTableViewsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleTableViewsCoordinator.swift; sourceTree = "<group>"; };
+		1E9AA5CA24AB245E00F8436C /* MultipleTableViewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleTableViewsViewController.swift; sourceTree = "<group>"; };
+		1E9AA5CC24AB2F4D00F8436C /* ExampleContentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleContentView.xib; sourceTree = "<group>"; };
+		1E9AA5CE24AB2FDF00F8436C /* ExampleContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleContentView.swift; sourceTree = "<group>"; };
+		1EB5831724AB3E6A00F595CC /* MTVViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTVViewModel.swift; sourceTree = "<group>"; };
 		2B536F0236877E4BB8A98FDC /* Pods_SFBaseKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SFBaseKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DD4638FD4642915E340847 /* Pods-SFBaseKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFBaseKitDemo.release.xcconfig"; path = "Target Support Files/Pods-SFBaseKitDemo/Pods-SFBaseKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		4A9B65932446E0D1006AC1F9 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -107,6 +121,7 @@
 		115B2344239A63DC001A2472 /* SFBaseKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1E9AA5C524AB1FC800F8436C /* MultipleTableViewsModule */,
 				C7CA722D244ECFA3002D0076 /* ExampleHomeModule */,
 				4A9B65952446E12A006AC1F9 /* ExampleLoginModule */,
 				4A9B65922446E0A9006AC1F9 /* AppCoordinator */,
@@ -126,6 +141,28 @@
 				115B235E239A63DC001A2472 /* Info.plist */,
 			);
 			path = SFBaseKitDemoTests;
+			sourceTree = "<group>";
+		};
+		1E1C934E24BC4F7D00E9B2F0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1E9AA5C524AB1FC800F8436C /* MultipleTableViewsModule */ = {
+			isa = PBXGroup;
+			children = (
+				1E1C934E24BC4F7D00E9B2F0 /* Cells */,
+				1E9AA5C824AB244F00F8436C /* MultipleTableViewsCoordinator.swift */,
+				1E9AA5CA24AB245E00F8436C /* MultipleTableViewsViewController.swift */,
+				1EB5831724AB3E6A00F595CC /* MTVViewModel.swift */,
+				1E9AA5C624AB1FFE00F8436C /* MultipleTableViews.storyboard */,
+				1E1C935124BDA1AE00E9B2F0 /* icons8-ios-50.png */,
+				1E9AA5CE24AB2FDF00F8436C /* ExampleContentView.swift */,
+				1E9AA5CC24AB2F4D00F8436C /* ExampleContentView.xib */,
+			);
+			path = MultipleTableViewsModule;
 			sourceTree = "<group>";
 		};
 		4A9B65922446E0A9006AC1F9 /* AppCoordinator */ = {
@@ -275,8 +312,11 @@
 			files = (
 				115B2352239A63DC001A2472 /* LaunchScreen.storyboard in Resources */,
 				C7CA7231244ECFEE002D0076 /* HomeScreen.storyboard in Resources */,
+				1E9AA5C724AB1FFE00F8436C /* MultipleTableViews.storyboard in Resources */,
 				115B234F239A63DC001A2472 /* Assets.xcassets in Resources */,
 				4A9B65992446E278006AC1F9 /* LoginScreen.storyboard in Resources */,
+				1E1C935224BDA1AE00E9B2F0 /* icons8-ios-50.png in Resources */,
+				1E9AA5CD24AB2F4D00F8436C /* ExampleContentView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,7 +398,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EB5831824AB3E6A00F595CC /* MTVViewModel.swift in Sources */,
+				1E9AA5CB24AB245E00F8436C /* MultipleTableViewsViewController.swift in Sources */,
+				1E9AA5CF24AB2FDF00F8436C /* ExampleContentView.swift in Sources */,
 				4A9B659C2446E31E006AC1F9 /* LoginViewController.swift in Sources */,
+				1E9AA5C924AB244F00F8436C /* MultipleTableViewsCoordinator.swift in Sources */,
 				4A9B659E2446E345006AC1F9 /* ForgottenPasswordViewController.swift in Sources */,
 				4A9B65942446E0D1006AC1F9 /* AppCoordinator.swift in Sources */,
 				115B2346239A63DC001A2472 /* AppDelegate.swift in Sources */,

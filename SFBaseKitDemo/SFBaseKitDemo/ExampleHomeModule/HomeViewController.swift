@@ -10,6 +10,7 @@ import SFBaseKit
 
 protocol HomeSceneDelegate: Coordinator {
     func homeSceneShouldContinueToLogOut()
+    func homeSceneShouldContinueToNextScreen()
 }
 
 class HomeViewController: UIViewController {
@@ -22,6 +23,10 @@ class HomeViewController: UIViewController {
     
     @IBAction func DidTapOnLogOutButton(_ sender: Any) {
         sceneDelegate.homeSceneShouldContinueToLogOut()
+    }
+    
+    @IBAction func nextScreenAction(_ sender: Any) {
+        sceneDelegate.homeSceneShouldContinueToNextScreen()
     }
 }
 

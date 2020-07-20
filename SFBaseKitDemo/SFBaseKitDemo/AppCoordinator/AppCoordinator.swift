@@ -15,6 +15,9 @@ protocol AppSceneDelegate: Coordinator {
     
     /// Starts navigation from First Home Scene.
     func shouldShowHomeScene()
+    
+    /// Continues navigation from First Home Scene
+    func shouldShowMultipleTableViewsScreen()
 }
 
 class AppCoordinator: Coordinator {
@@ -59,5 +62,12 @@ extension AppCoordinator: AppSceneDelegate {
         let homeCoordinator = HomeCoordinator(navigationController: navigationController)
         addChildCoordinator(homeCoordinator)
         homeCoordinator.start()
+    }
+    
+    func shouldShowMultipleTableViewsScreen() {
+        let navigationController = setWindowRootViewController()
+        let MTVCoordinator = MultipleTableViewsCoordinator(navigationController: navigationController)
+        addChildCoordinator(MTVCoordinator)
+        MTVCoordinator.start()
     }
 }
